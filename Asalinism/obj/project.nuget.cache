@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "lR26+dqpcUFdIX3X85+JFbGdIPOOi0HGAIZ75H98gA7YNTLebrck950OH/XMGyE4nv13ozoPR7W1NAeTY/wX4A==",
+  "success": true,
+  "projectFilePath": "c:\\Users\\jaidi\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Asalinism\\Asalinism.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jaidi\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512"
+  ],
+  "logs": []
+}
