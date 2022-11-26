@@ -1,3 +1,0 @@
-displayName = Asalinism
-author = Ximaciji
-version = 0.1
