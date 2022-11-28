@@ -6,26 +6,22 @@ namespace Asalinism.Content.Scripts.CustomRecipes
 {
     public class SnowArmor : ModSystem
     {
+        int[] snowArmor = new int[] { ItemID.EskimoHood, ItemID.EskimoCoat, ItemID.EskimoPants, ItemID.PinkEskimoHood, ItemID.PinkEskimoCoat, ItemID.PinkEskimoPants };
+        static int DetermineColor(int arrayElement) {
+            if (arrayElement < 3) {
+                return (arrayElement + 3);
+            } else {
+                return (arrayElement - 3);
+            }
+        }
         public override void AddRecipes()
         {
-            Recipe.Create(ItemID.EskimoHood)
-                .AddIngredient(ItemID.PinkEskimoHood, 1)
-                .Register();
-            Recipe.Create(ItemID.EskimoCoat)
-                .AddIngredient(ItemID.PinkEskimoCoat, 1)
-                .Register();
-            Recipe.Create(ItemID.EskimoPants)
-                .AddIngredient(ItemID.PinkEskimoPants, 1)
-                .Register();
-            Recipe.Create(ItemID.PinkEskimoHood)
-                .AddIngredient(ItemID.EskimoHood, 1)
-                .Register();
-            Recipe.Create(ItemID.PinkEskimoCoat)
-                .AddIngredient(ItemID.EskimoCoat, 1)
-                .Register();
-            Recipe.Create(ItemID.PinkEskimoPants)
-                .AddIngredient(ItemID.EskimoPants, 1)
-                .Register();
+            for (int i = 0; i < 6; i++)
+            {
+                Recipe.Create(snowArmor[i])
+                    .AddIngredient(snowArmor[DetermineColor(i)])
+                    .Register();
+            } 
         }
     }
 }
