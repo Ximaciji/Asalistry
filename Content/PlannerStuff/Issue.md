@@ -1,3 +1,5 @@
+- [ ]  Item Upgrades (Pickaxes, Axes, Hammers, Swords, Bows, Helmet, Breastplate, Greaves, Shortswords, Gem Staff, Watches, Fishing Rods, Yoyos, Hamaxe, Flail, Spears, Drill, Chainsaws, Bows → Repeaters) Upgrade happens with BARS only, Evil Upgrade require the boss drop (tissue sample and shadow sales)
+
 ---
 
 - [ ]  Turn bars into ores (shroomite and spectre ore turn into ingredients) & Decrafting with Extractinator (Is possible?)
