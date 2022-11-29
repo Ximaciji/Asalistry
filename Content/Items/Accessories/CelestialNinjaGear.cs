@@ -1,7 +1,9 @@
 using Terraria;
+using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria.GameContent.Creative;
+using Asalinism.Content.Common.Players;
+using System;
 
 namespace Asalinism.Content.Items.Accessories
 {
@@ -30,18 +32,14 @@ namespace Asalinism.Content.Items.Accessories
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual) {
-			// Celestial Shell
-			player.GetAttackSpeed(DamageClass.Melee) += 0.1f;
-			player.GetDamage(DamageClass.Generic) += 0.1f;
-			player.GetCritChance(DamageClass.Generic) += 2f;
-			player.lifeRegen += 1;
-			player.statDefense += 4;
-			player.GetKnockback(DamageClass.Summon) += 0.05f;
-			player.breathMax = 100;
-			player.breath = 100;
-			
-
-			// Master Ninja Gear
-		}
+			/*Random rand = new Random();
+			if (rand.Next(0, 2) == 0) {
+				player.GetModPlayer<CelestialNinjaGearAccecssory>().HasCelestialNinjaGear = true;
+			}
+			else if (rand.Next(0, 2) == 1) {
+				player.GetModPlayer<CelestialNinjaGearAccecssory>().HasCelestialNinjaGear = true;
+			}*/
+			player.GetModPlayer<CelestialNinjaGearAccecssory>().HasCelestialNinjaGear = true;
+		}	
 	}
 }
