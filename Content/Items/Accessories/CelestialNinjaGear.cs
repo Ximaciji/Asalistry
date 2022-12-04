@@ -48,9 +48,6 @@ namespace Asalistry.Content.Items.Accessories
 			else if (rand.Next(0, 2) == 1) {
 				player.GetModPlayer<CelestialNinjaGearAccecssory>().HasCelestialNinjaGear = true;
 			}
-			if () {
-                player.merman = true;
-			}
 		}	
 	}
 }
