@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Asalinism.Content.Items.Accessories
+namespace Asalistry.Content.Items.Accessories
 {
 	[AutoloadEquip(EquipType.Shoes)]
 	public class TerramphibianBoots : ModItem
@@ -21,8 +21,32 @@ namespace Asalinism.Content.Items.Accessories
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual) {
-			player.accRunSpeed = 6f; // The player's maximum run speed with accessories
-			player.moveSpeed += 0.05f; // The acceleration multiplier of the player's movement speed
+			player.accFlipper = true;
+			player.accRunSpeed = 10f;
+			player.frogLegJumpBoost = true;
+			player.autoJump = true;
+			player.noFallDmg = true;
+			player.waterWalk = true;
+			player.lavaImmune = true;
+			player.fireWalk = true;
+			player.waterWalk2 = true;
+			player.iceSkate = true;
+			player.moveSpeed += 0.5f;
+			player.maxRunSpeed += 0.5f;
+			player.rocketBoots = 1;
+			player.rocketTimeMax += 1;
+		}
+
+		public override void AddRecipes() {
+			CreateRecipe()
+				.AddIngredient(ItemID.TerrasparkBoots)
+				.AddIngredient(ItemID.FrogLeg)
+				.AddIngredient(ItemID.Flipper)
+				.Register();
+			CreateRecipe()
+				.AddIngredient(ItemID.TerrasparkBoots)
+				.AddIngredient(ItemID.AmphibianBoots)
+				.Register();
 		}
 	}
 }

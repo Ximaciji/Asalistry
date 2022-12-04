@@ -4,7 +4,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using System;
 
-namespace Asalinism.Content.Common.Recipes
+namespace Asalistry.Content.Common.Recipes
 {
     public class DungeonDefendersArmor : ModSystem
     {

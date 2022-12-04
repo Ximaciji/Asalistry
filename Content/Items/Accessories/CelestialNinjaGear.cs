@@ -2,10 +2,11 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Asalinism.Content.Common.Players;
+using Asalistry.Content.Common.Players;
 using System;
+using IL.Terraria.GameContent.Ambience;
 
-namespace Asalinism.Content.Items.Accessories
+namespace Asalistry.Content.Items.Accessories
 {
 	public class CelestialNinjaGear : ModItem
 	{
@@ -32,14 +33,24 @@ namespace Asalinism.Content.Items.Accessories
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual) {
-			/*Random rand = new Random();
+			// Celestial Stone
+            player.statDefense += 10;
+            player.lifeRegen += 2;
+            player.GetDamage(DamageClass.Generic) += 0.05f;
+            player.GetCritChance(DamageClass.Generic) += 5;
+            player.pickSpeed -= 0.5f;
+            player.GetKnockback(DamageClass.Summon) += 0.5f;
+			// Master Ninja Gear
+			Random rand = new Random();
 			if (rand.Next(0, 2) == 0) {
 				player.GetModPlayer<CelestialNinjaGearAccecssory>().HasCelestialNinjaGear = true;
 			}
 			else if (rand.Next(0, 2) == 1) {
 				player.GetModPlayer<CelestialNinjaGearAccecssory>().HasCelestialNinjaGear = true;
-			}*/
-			player.GetModPlayer<CelestialNinjaGearAccecssory>().HasCelestialNinjaGear = true;
+			}
+			if () {
+                player.merman = true;
+			}
 		}	
 	}
 }

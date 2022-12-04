@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
 
-namespace Asalinism.Content.Common.Recipes.Minerals
+namespace Asalistry.Content.Common.Recipes.Minerals
 {
     public class MineralUpgrade : ModSystem
     {

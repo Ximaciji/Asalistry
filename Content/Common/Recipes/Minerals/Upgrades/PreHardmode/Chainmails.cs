@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
 
-namespace Asalinism.Content.Common.Recipes.Minerals.Upgrades.PreHardmode
+namespace Asalistry.Content.Common.Recipes.Minerals.Upgrades.PreHardmode
 {
     public class Chainmails : ModSystem
     {

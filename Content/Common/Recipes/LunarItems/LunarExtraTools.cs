@@ -2,7 +2,7 @@ using Terraria.ModLoader;
 using Terraria;
 using Terraria.ID;
 
-namespace Asalinism.Content.Common.Recipes.LunarItems
+namespace Asalistry.Content.Common.Recipes.LunarItems
 {
     // Add Sprites and Behaviors for the Chainsaws, Hammers, and Axes
     // Hey past me. I don't wanna do this. Passing this on to future me.

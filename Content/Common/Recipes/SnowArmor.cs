@@ -2,7 +2,7 @@ using Terraria.ModLoader;
 using Terraria;
 using Terraria.ID;
 
-namespace Asalinism.Content.Common.Recipes{
+namespace Asalistry.Content.Common.Recipes{
     public class SnowArmor : ModSystem
     {
         int[] snowArmor = new int[] { ItemID.EskimoHood, ItemID.EskimoCoat, ItemID.EskimoPants, ItemID.PinkEskimoHood, ItemID.PinkEskimoCoat, ItemID.PinkEskimoPants };

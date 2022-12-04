@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
 
-namespace Asalinism.Content.Common.Recipes
+namespace Asalistry.Content.Common.Recipes
 {
     public class WoodArmor : ModSystem
     {

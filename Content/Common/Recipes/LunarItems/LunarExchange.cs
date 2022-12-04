@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
 
-namespace Asalinism.Content.Common.Recipes.LunarItems
+namespace Asalistry.Content.Common.Recipes.LunarItems
 {
     public class LunarExchange : ModSystem
     {

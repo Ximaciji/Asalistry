@@ -6,7 +6,7 @@ using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 
 
-namespace Asalinism.Content.Items.Weapons
+namespace Asalistry.Content.Items.Weapons
 {
 	public class HarbingerTranquilizer : ModItem
 	{
@@ -26,7 +26,7 @@ namespace Asalinism.Content.Items.Weapons
 			Item.autoReuse = true;
 
 			Item.DamageType = DamageClass.Melee;
-			Item.damage = 50;
+			Item.damage = 5000;
 			Item.knockBack = 6;
 			Item.crit = 6;
 

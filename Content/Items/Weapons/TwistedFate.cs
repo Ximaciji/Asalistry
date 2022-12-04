@@ -6,7 +6,7 @@ using Terraria.GameContent.Creative;
 using Terraria.ModLoader;
 
 
-namespace Asalinism.Content.Items.Weapons
+namespace Asalistry.Content.Items.Weapons
 {
 	public class TwistedFate : ModItem
 	{
@@ -16,8 +16,8 @@ namespace Asalinism.Content.Items.Weapons
 			CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
 		}
 		public override void SetDefaults() {
-			Item.width = 32;
-			Item.height = 32;
+			Item.width = 40;
+			Item.height = 40;
 
 			Item.useStyle = ItemUseStyleID.Swing;
 			Item.useTime = 20;
@@ -25,7 +25,7 @@ namespace Asalinism.Content.Items.Weapons
 			Item.autoReuse = true;
 
 			Item.DamageType = DamageClass.Melee;
-			Item.damage = 50;
+			Item.damage = 50000;
 			Item.knockBack = 6;
 			Item.crit = 6;
 
