@@ -1,3 +1,3 @@
-displayName = Asalinism
+displayName = Asalistry
 author = Ximaciji
 version = 0.1
