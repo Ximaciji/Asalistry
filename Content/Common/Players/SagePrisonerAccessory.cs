@@ -16,13 +16,8 @@ namespace Asalistry.Content.Common.Players
 
         public override bool PreKill(double damage, int hitDirection, bool pvp, ref bool playSound, ref bool genGore, ref PlayerDeathReason damageSource) {
 			if (HasSagePrisoner) {
-				damage = 0;
 				playSound = false;
 				hitDirection = 0;
-				pvp = false;
-				Player.immune = true;
-				Player.immuneTime = 60;
-				Player.immuneNoBlink = false;
 				Player.statLife = Player.statLifeMax2;
 				return false;
 			}
